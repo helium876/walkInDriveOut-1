@@ -1,0 +1,39 @@
+{
+  "name": "Arctext.js",
+  "homepage": "https://github.com/codrops/Arctext",
+  "description": "Arctext.js lets you arrage each letter of a text along a curved path",
+  "main": "js/jquery.arctext.js",
+  "keywords": [
+    "js",
+    "javascript",
+    "jquery",
+    "arctext",
+    "codrops",
+    "bend",
+    "wrap",
+    "curved",
+    "text",
+    "letter"
+  ],
+  "authors": [
+    "https://github.com/botelho"
+  ],
+  "license": "http://tympanus.net/codrops/licensing/",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "a7db6acf6c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "a7db6acf6c190667fe3c216d6d4aeb33af06cb6b"
+  },
+  "_source": "git://github.com/codrops/Arctext.git",
+  "_target": "*",
+  "_originalSource": "arctext-js",
+  "_direct": true
+}

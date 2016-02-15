@@ -1,0 +1,88 @@
+{{!< default}}
+<div id="fullpage">
+		<div class="section" id="search-section">
+				<div class="container">
+						<img src="/images/badge.png" alt="" id="badge" class="center-block"/>
+						<div class="panel panel-default">
+								<div class="panel-heading">
+										<h3 class="panel-title">Search</h3>
+								</div>
+								<div class="panel-body form-group">
+										<form action="index_submit" class="form-inline" method="get" accept-charset="utf-8">
+												<select class="form-control">
+														{{# each makes}}
+														<option>{{make}}</option>
+														{{/each}}
+												</select>
+												<select class="form-control">
+														{{# each years}}
+														<option>{{year}}</option>
+														{{/each}}
+												</select>
+												<select class="form-control">
+														{{# each maxprice}}
+														<option>{{price}}</option>
+														{{/each}}
+												</select>
+												<button class="btn btn-primary">Search</button>
+										</form>
+								</div>	
+						</div>
+				</div>
+		</div>
+
+		<div class="section about-us">
+				<div class="container">
+						<div class="row">
+								<div class="col-md-4">
+										<img src="images/buy.png" class="icon center-block" alt=""/>
+										<p class="title text-center">We Buy</p>
+										<p>Sell us your used car, we'll value it and buy it!</p>
+								</div>
+								<div class="col-md-4">
+										<img src="images/sell.png" class="icon center-block" alt=""/>
+										<p class="title text-center">We Sell</p>
+										<p>Come in and choose from our wide array of new and used cars</p>
+								</div>
+								<div class="col-md-4">
+										<img src="images/trade.png" class="icon center-block" alt=""/>
+										<p class="title text-center">We Trade</p>
+										<p>We'll trade our car for yours!</p>
+								</div>
+						</div>
+				</div>
+
+		</div>
+		<div class="section about-us">
+
+				<div class="container">
+										<h4 class="text-weight-normal">Showing {{ data.posts.results.length}} post.</h4>
+										<div>
+														<ul class="group">
+												{{# each data.posts.results}}
+																<li>
+																				<a href="http://www.url.com" target="_blank">
+																				<img src="{{{image.secure_url}}}" class="blog-square" alt=""/>
+
+																				</a>
+																</li>	
+												{{/each}}
+
+								</ul>
+
+								</div>
+								<div class="col-sm-4 col-md-3">
+										<h2>Categories</h2>
+										<div style="margin-top: 70px;" class="list-group">
+												<a href="/blog" class="active list-group-item">All Categories</a>
+												{{# each data.categories }}
+												<a href="{{categoryUrl key}}" class="false list-group-item">{{name}}</a>
+												{{/each}}
+										</div>
+								</div>
+						</div>
+						{{>pagination}}
+				</div>
+		</div>
+
+

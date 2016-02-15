@@ -1,0 +1,22 @@
+{
+  "name": "walkindriveout",
+  "description": "car sales in Jamaica",
+  "main": "keystone.js",
+  "authors": [
+    "Pr0x1m4 <proxima.aust@gmail.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Arctext.js": "arctext-js#*",
+    "fullpage.js": "~2.7.6"
+  }
+}
